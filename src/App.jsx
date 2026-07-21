@@ -1,3 +1,4 @@
+import React from "react";
 const { useState, useEffect, useRef } = React;
 
 const CONFIG = {
@@ -38,7 +39,7 @@ const CONFIG = {
   ],
 };
 
-function App() {
+export default function App() {
   const [stage, setStage] = useState("gift"); // gift, pin, curtain, intro, cake, memories, wishes, puzzle, scratch, letter, done
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
   const [giftOpen, setGiftOpen] = useState(false);
